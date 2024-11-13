@@ -1,37 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Roobcrack</title>
+    <title>Index - Roobcrack</title>
     <style>
-body {
-    background: linear-gradient(135deg, #2d2d2d, #d3d3d3);
-    color: #f0f0f0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1; /* Toma el espacio restante entre el nav y el footer */
-}
-nav {
-    width: 100%;
-    background-color: #444;
-    padding: 15px 0;
-    text-align: center;
-    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5); /* Borde borroso más fuerte */
-}
-
+        body {
+            background: linear-gradient(135deg, #2d2d2d, #d3d3d3);
+            color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            animation: backgroundFlash 0.5s ease-in-out forwards;
+        }
+        @keyframes backgroundFlash {
+            0% { background: #ffffff; }
+            10% { background: linear-gradient(135deg, #fbfbfb, #eaeaea); }
+            20% { background: linear-gradient(135deg, #f8f8f8, #d3d3d3); }
+            30% { background: linear-gradient(135deg, #f1f1f1, #d3d3d3); }
+            40% { background: linear-gradient(135deg, #e6e6e6, #d3d3d3); }
+            50% { background: linear-gradient(135deg, #dcdcdc, #d3d3d3); }
+            60% { background: linear-gradient(135deg, #c2c2c2, #d3d3d3); }
+            70% { background: linear-gradient(135deg, #a5a5a5, #d3d3d3); }
+            80% { background: linear-gradient(135deg, #8f8f8f, #d3d3d3); }
+            90% { background: linear-gradient(135deg, #565656, #d3d3d3); }
+            100% { background: linear-gradient(135deg, #2d2d2d, #d3d3d3); }
+        }
+        nav {
+            width: 100%;
+            background-color: #444;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+        }
         nav a {
             color: #f0f0f0;
             text-decoration: none;
@@ -42,6 +47,13 @@ nav {
         nav a:hover {
             color: #d3d3d3;
         }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        }
         .container {
             text-align: center;
             padding: 20px;
@@ -49,7 +61,7 @@ nav {
             border-radius: 15px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
             background-color: #525252;
-            animation: fadeIn 2s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
             transition: transform 0.3s, box-shadow 0.3s;
             min-width: 500px;
         }
@@ -74,11 +86,6 @@ nav {
             font-weight: bold;
             transition: background-color 0.3s, color 0.3s;
         }
-        .btn:hover {
-            background-color: #2d2d2d;
-            color: #f0f0f0;
-            border: 2px solid #f0f0f0;
-        }
         .extra-section {
             padding: 50px;
             background-color: #3b3b3b;
@@ -88,13 +95,13 @@ nav {
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         }
         footer {
-    width: 100%;
-    background-color: #444;
-    color: #f0f0f0;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: auto; /* Empuja el footer hacia abajo */
-}
+            width: 100%;
+            background-color: #444;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+        }
         @keyframes fadeIn {
             0% { opacity: 0; transform: scale(0.9); }
             100% { opacity: 1; transform: scale(1); }
