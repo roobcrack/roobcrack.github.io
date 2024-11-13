@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Roobcrack</title>
     <style>
-        body {
-            background: linear-gradient(135deg, #2d2d2d, #d3d3d3);
-            color: #f0f0f0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
+body {
+    background: linear-gradient(135deg, #2d2d2d, #d3d3d3);
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1; /* Toma el espacio restante entre el nav y el footer */
+}
         nav {
             width: 100%;
             background-color: #444;
@@ -80,14 +87,13 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         }
         footer {
-            width: 100%;
-            background-color: #444;
-            color: #f0f0f0;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 1000px;
-            position: relative;
-        }
+    width: 100%;
+    background-color: #444;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Empuja el footer hacia abajo */
+}
         @keyframes fadeIn {
             0% { opacity: 0; transform: scale(0.9); }
             100% { opacity: 1; transform: scale(1); }
@@ -97,14 +103,16 @@
 <body>
     <nav>
         <a href="#">Index</a>
-        <a href="#proyectos">projects</a>
-        <a href="#contacto">contact</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
-    <div class="container">
-        <h1>Welcome INDEX</h1>
-        <p>Discover all new kind of projects</p>
-        <a href="https://github.com/roobcrack" class="btn">Check Github</a>
-    </div>
+    <main>
+        <div class="container">
+            <h1>Welcome INDEX</h1>
+            <p>Discover all new kind of projects</p>
+            <a href="https://github.com/roobcrack" class="btn">Check Github</a>
+        </div>
+    </main>
     <footer>
         &copy; 2024 Roobcrack. All rights reserved.
     </footer>
