@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index - Roobcrack</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #2d2d2d, #d3d3d3);
+            color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            animation: backgroundFlash 0.5s ease-in-out forwards;
+        }
+        @keyframes backgroundFlash {
+            0% { background: #ffffff; }
+            10% { background: linear-gradient(135deg, #fbfbfb, #eaeaea); }
+            20% { background: linear-gradient(135deg, #f8f8f8, #d3d3d3); }
+            30% { background: linear-gradient(135deg, #f1f1f1, #d3d3d3); }
+            40% { background: linear-gradient(135deg, #e6e6e6, #d3d3d3); }
+            50% { background: linear-gradient(135deg, #dcdcdc, #d3d3d3); }
+            60% { background: linear-gradient(135deg, #c2c2c2, #d3d3d3); }
+            70% { background: linear-gradient(135deg, #a5a5a5, #d3d3d3); }
+            80% { background: linear-gradient(135deg, #8f8f8f, #d3d3d3); }
+            90% { background: linear-gradient(135deg, #565656, #d3d3d3); }
+            100% { background: linear-gradient(135deg, #2d2d2d, #d3d3d3); }
+        }
+        nav {
+            width: 100%;
+            background-color: #444;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+        }
+        nav a {
+            color: #f0f0f0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #d3d3d3;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #666;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            background-color: #525252;
+            animation: fadeIn 1s ease-in-out;
+            transition: transform 0.3s, box-shadow 0.3s;
+            min-width: 500px;
+        }
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+        }
+        .btn {
+            text-decoration: none;
+            background-color: #f0f0f0;
+            color: #2d2d2d;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .extra-section {
+            padding: 50px;
+            background-color: #3b3b3b;
+            border-radius: 10px;
+            margin: 30px 0;
+            width: 80%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            width: 100%;
+            background-color: #444;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Index</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>Welcome to Roobcrack's page</h1>
+            <p>Discover all new kind of projects</p>
+            <a href="https://github.com/roobcrack" class="btn">Check Github</a>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Roobcrack. All rights reserved.
+    </footer>
+</body>
+</html>
